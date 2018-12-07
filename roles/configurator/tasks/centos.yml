@@ -1,0 +1,12 @@
+---
+  - name: add epel-release repository
+    yum:
+      name: epel-release
+      state: present
+
+  - name: install requirements
+    yum:
+      name:
+        - python34-requests
+        - python34-PyYAML
+      state: latest

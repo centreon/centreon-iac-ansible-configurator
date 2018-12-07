@@ -1,0 +1,18 @@
+---
+
+
+  - name: Make wrapper file using template
+    template:
+      src: templates/wrapper.py.j2
+      dest: /tmp/wrapper.py
+      mode: 0755
+
+  - name: Make config yaml file using template
+    template:
+      src: templates/config.yml.j2
+      dest: /tmp/config.yml
+      mode: 0644
+
+  - name: Apply configuration using wrapper
+    shell: /usr/bin/python3 /tmp/wrapper.py
+    register: wrapperoutput
