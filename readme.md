@@ -17,7 +17,7 @@ Table of Contents
 
 # Overview
 
-![wrapper diagram][docs/images/wrapper_diagram.png]
+![wrapper diagram][https://raw.githubusercontent.com/centreon-lab/centreon-iac-ansible-configurator/master/docs/images/wrapper_diagram.png]
 
 The `wrapper` is built to intermediate the apply of objects configured in a single template and can be applied remotely through a set of predefined instructions and using the Centreon webapi tools for configuration in the environment.
 
@@ -148,7 +148,7 @@ For example, to create a host with a webserver service with Nginx, you can have 
 
 ## Complex example
 
-![wrapper diagram][docs/images/wrapper_with_proxy.png]
+![wrapper diagram][https://raw.githubusercontent.com/centreon-lab/centreon-iac-ansible-configurator/master/docs/images/wrapper_with_proxy.png]
 
 We may have a situation where Ansible may not have access directly to Centreon, only through a host that is located between the Ansible network and the DMZ where the Centreon is located. For these scenarios, you will either have to use a specific host or use the services client that Centreon will monitor.
 
