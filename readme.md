@@ -13,6 +13,7 @@ Table of Contents
   * [Scenarios](#scenarios)
   * [Simple Example](#simple-example)
   * [Complex Example](#complex-example)
+- [Screencasts](#screencasts)
 - [License](LICENSE)
 
 # Overview
@@ -148,3 +149,6 @@ For example, to create a host with a webserver service with Nginx, you can have 
 
 We may have a situation where Ansible may not have access directly to Centreon, only through a host that is located between the Ansible network and the DMZ where the Centreon is located. For these scenarios, you will either have to use a specific host or use the services client that Centreon will monitor.
 
+# Screencasts
+
+Add screencasts
