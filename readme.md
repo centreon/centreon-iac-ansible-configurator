@@ -53,10 +53,6 @@ cd centreon-iac-ansible-configurator
 Comming soon
 
 # Role Variables
-    centreon_admin_password: "p4ssw0rd"
-    centreon_webapi_host: "http://192.168.150.10"
-    centreon_webapi_port: "80"
-    configuration:
 
 * `centreon_webapi_host`: Host or ip to connect in WebAPI
 * `centreon_webapi_port`: TCP port to connect in WebAPI
