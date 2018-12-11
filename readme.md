@@ -97,7 +97,7 @@ Sample values for the variable `configuration`:
 
 You can create playbooks to add a set of objects directly to Centreon, or you can create the objects into separate playbooks for each host you add using Ansible.
 
-For example, to create a host with a webserver service with Nginx, you can have a playbook as defined [here: deploy-nginx.yml](deploy-nginx.yml)
+For example, to create a host with a webserver service with Nginx, you can have a playbook as defined [here: deploy-nginx.yml](examples/deploy-nginx.yml)
 
 ## Simple example
 
