@@ -4,7 +4,6 @@ Table of Contents
 
 - [Overview](#overview)
 - [Compatible Centreon versions](#compatible-centreon-versions)
-  * [18.10.0](#18.10.0)
 - [Requirements](#requirements)
   * [Operating systems](#operating-systems)
 - [Installation](#installation)
