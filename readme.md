@@ -37,7 +37,7 @@ This role will work on the following operating systems:
  * Red Hat / Centos
  * Debian
  * Ubuntu
- * Windows (soon)
+ * Windows (coming soon)
 
 # Installation
 
@@ -51,7 +51,7 @@ cd centreon-iac-ansible-configurator
 
 ## Using Ansible Galaxy
 
-Comming soon
+Coming soon
 
 # Role Variables
 
@@ -143,7 +143,7 @@ For example, to create a host with a webserver service with Nginx, you can have 
         }
 ```
 
-## Complex example
+## Advanced example
 
 ![wrapper diagram](docs/images/wrapper_with_proxy.png)
 
@@ -151,4 +151,4 @@ We may have a situation where Ansible may not have access directly to Centreon, 
 
 # Screencasts
 
-Add screencasts
+(Coming soon)
