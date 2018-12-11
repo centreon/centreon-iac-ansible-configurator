@@ -3,7 +3,7 @@
 Table of Contents
 
 - [Overview](#overview)
-- [Versions](#versions)
+- [Compatible Centreon versions](#compatible-centreon-versions)
   * [18.10.0](#18.10.0)
 - [Requirements](#requirements)
   * [Operating systems](#operating-systems)
@@ -12,7 +12,7 @@ Table of Contents
 - [Examples](#examples)
   * [Scenarios](#scenarios)
   * [Simple Example](#simple-example)
-  * [Complex Example](#complex-example)
+  * [Advanced Example](#advanced-example)
 - [Screencasts](#screencasts)
 - [License](LICENSE)
 
@@ -22,11 +22,12 @@ Table of Contents
 
 The `wrapper` is built to intermediate the apply of objects configured in a single template and can be applied remotely through a set of predefined instructions and using the Centreon webapi tools for configuration in the environment.
 
-# Versions
+# Compatible Centreon versions
 
-## 18.10.0
+Following versions of Centreon are successfully tested with this role:
+ * 18.10.0
 
-Version with synchronized functions for version 18.10.0 of the Centreon
+
 
 # Requirements
 
