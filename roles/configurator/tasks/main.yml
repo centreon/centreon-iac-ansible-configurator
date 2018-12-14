@@ -1,5 +1,7 @@
 ---
-
+  - name: Install requires packages to CentOS
+    include: 'centos.yml'
+    when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
 
   - name: Make wrapper file using template
     template:
