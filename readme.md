@@ -65,9 +65,10 @@ Sample values for the variable `configuration`:
         cg:
         - {
           'name': 'testers',
-          'alias': 'Testers contacts'
+          'alias': 'Testers contacts',
+          'state': 'enabled'
           }
-        contacts:
+        contact:
         - {
           'name': 'Test contact One',
           'alias': 'test01',
@@ -76,7 +77,7 @@ Sample values for the variable `configuration`:
           'admin': '0',
           'gui': '1',
           'language': 'en_US',
-          'auth': 'local',
+          'auth_type': 'local',
           'state': 'enabled' # enabled, disabled, absent
           }
         host:
@@ -105,21 +106,22 @@ For example, to create a host with a webserver service with Nginx, you can have 
 ---
 
 - name: Add monitor to Centreon
-  hosts: webserver
+  hosts: centreon-web
   remote_user: root
 
   roles:
-  - role: "roles/centreon-config"
-    centreon_admin_password: "p4ssw0rd"
-    centreon_webapi_host: "http://192.168.150.10"
+  - role: "roles/configurator"
+    centreon_admin_password: "centreon"
+    centreon_webapi_host: "http://localhost"
     centreon_webapi_port: "80"
     configuration:
         cg:
         - {
           'name': 'testers',
-          'alias': 'Testers contacts'
+          'alias': 'Testers contacts',
+          'state': 'enabled'
           }
-        contacts:
+        contact:
         - {
           'name': 'Test contact One',
           'alias': 'test01',
@@ -128,7 +130,7 @@ For example, to create a host with a webserver service with Nginx, you can have 
           'admin': '0',
           'gui': '1',
           'language': 'en_US',
-          'auth': 'local',
+          'auth_type': 'local',
           'state': 'enabled' # enabled, disabled, absent
           }
         host:

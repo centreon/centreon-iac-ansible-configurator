@@ -11,9 +11,10 @@
         cg:
         - {
           'name': 'testers',
-          'alias': 'Testers contacts'
+          'alias': 'Testers contacts',
+          'state': 'enabled'
           }
-        contacts:
+        contact:
         - {
           'name': 'Test contact One',
           'alias': 'test01',
@@ -22,7 +23,7 @@
           'admin': '0',
           'gui': '1',
           'language': 'en_US',
-          'auth': 'local',
+          'auth_type': 'local',
           'state': 'enabled' # enabled, disabled, absent
           }
         host:
