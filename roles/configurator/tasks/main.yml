@@ -3,6 +3,10 @@
     include: 'centos.yml'
     when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
 
+  - name: Install requires packages to Debian/Ubuntu
+    include: 'debian.yml'
+    when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
   - name: Make wrapper file using template
     template:
       src: templates/wrapper.py.j2
